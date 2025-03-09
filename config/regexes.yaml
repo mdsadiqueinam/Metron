@@ -1,0 +1,56 @@
+user_agent_parsers:
+  - regex: '(Slack(?:_SSB)?)/(\d+)(?:\.(\d+))?(?:\.(\d+))?'
+    family_replacement: 'Slack'
+
+  - regex: '(Edge)/(\d+)[\.\d]*'
+    family_replacement: 'Edge'
+
+  - regex: '(Chrome)/(\d+)[\.\d]*'
+    family_replacement: 'Chrome'
+
+  - regex: '(Firefox)/(\d+)[\.\d]*'
+    family_replacement: 'Firefox'
+
+  - regex: '(Safari)/(\d+)[\.\d]*'
+    family_replacement: 'Safari'
+
+  - regex: 'MSIE (\d+)[\.\d]*'
+    family_replacement: 'Internet Explorer'
+
+  - regex: '(Opera)/(\d+)[\.\d]*'
+    family_replacement: 'Opera'
+
+os_parsers:
+  - regex: '(Windows NT) (\d+)\.(\d+)'
+    os_replacement: 'Windows'
+
+  - regex: '(Android) (\d+)\.(\d+)'
+    os_replacement: 'Android'
+
+  - regex: '(iPhone|iPad|iPod)'
+    os_replacement: 'iOS'
+
+  - regex: '(Mac OS X) (\d+)[\._](\d+)'
+    os_replacement: 'Mac OS X'
+
+  - regex: '(Linux)'
+    os_replacement: 'Linux'
+
+device_parsers:
+  - regex: '(iPhone)'
+    device_replacement: 'iPhone'
+
+  - regex: '(iPad)'
+    device_replacement: 'iPad'
+
+  - regex: '(iPod)'
+    device_replacement: 'iPod'
+
+  - regex: '(Android)'
+    device_replacement: 'Android'
+
+  - regex: 'Windows Phone'
+    device_replacement: 'Windows Phone'
+
+  - regex: '(Mobile|Tablet|TV|Bot|Car)'
+    device_replacement: '$1' 

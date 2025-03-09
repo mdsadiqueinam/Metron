@@ -1,0 +1,26 @@
+[package]
+name = "analytics-api"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rocket = { version = "0.5", features = ["json"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1.0", features = ["full"] }
+chrono = { version = "0.4", features = ["serde"] }
+geoip2 = "0.1"
+user-agent-parser = "0.3"
+uuid = { version = "1.0", features = ["v4", "serde"] }
+clickhouse-rs = "1.1.0-alpha.1"
+thiserror = "2.0.12"
+tracing = "0.1"
+tracing-subscriber = "0.3"
+config = "0.15.9"
+dotenv = "0.15"
+async-trait = "0.1"
+futures = "0.3"
+maxminddb = "0.23"
+url = "2.4"
+ipnetwork = "0.20"
+rate_limit = "0.1"

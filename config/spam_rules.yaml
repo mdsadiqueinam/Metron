@@ -1,0 +1,59 @@
+---
+# Spam domains and patterns configuration
+# These rules are based on Plausible Analytics' spam detection
+
+spam_domains:
+  # Known spam referrer domains
+  - spam-domain.com
+  - fake-traffic.net
+  - social-buttons.xyz
+  - buy-cheap-traffic.com
+  - free-social-buttons.com
+  - free-share-buttons.com
+  - free-traffic.xyz
+  - buttons-for-website.com
+  - get-free-traffic.com
+  - success-seo.com
+  - best-seo-offer.com
+  - buttons-for-your-website.com
+  - best-seo-solution.com
+  - 100dollars-seo.com
+  - semalt.com
+  - semaltmedia.com
+  - trafficbot.xyz
+  - traffic-generator.xyz
+
+spam_patterns:
+  # Suspicious patterns in referrer URLs
+  - spam
+  - traffic
+  - free-social
+  - buy-cheap
+  - buttons-for
+  - success-seo
+  - seo-offer
+  - traffic-bot
+  - traffic-generator
+  - backlink
+  - black-hat
+  - click-fraud
+  - fake-traffic
+  - fake-referral
+  - referral-spam
+
+# Additional rules from Plausible's external controller
+shield_rules:
+  protected_paths:
+    - /wp-login
+    - /wp-admin
+    - /admin
+    - /login
+    - /administrator
+    - /phpmyadmin
+  bot_user_agents:
+    - bot
+    - crawler
+    - spider
+    - semrush
+    - ahrefs
+    - moz.com 
