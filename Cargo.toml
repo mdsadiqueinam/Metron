@@ -1,5 +1,5 @@
 [package]
-name = "analytics-api"
+name = "analytics"
 version = "0.1.0"
 edition = "2021"
 
@@ -7,11 +7,11 @@ edition = "2021"
 rocket = { version = "0.5", features = ["json"] }
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
-tokio = { version = "1.0", features = ["full"] }
+tokio = { version = "1.36", features = ["full"] }
 chrono = { version = "0.4", features = ["serde"] }
 geoip2 = "0.1"
 user-agent-parser = "0.3"
-uuid = { version = "1.0", features = ["v4", "serde"] }
+uuid = { version = "1.7", features = ["v4", "serde"] }
 clickhouse-rs = "1.1.0-alpha.1"
 thiserror = "2.0.12"
 tracing = "0.1"
@@ -24,3 +24,7 @@ maxminddb = "0.23"
 url = "2.4"
 ipnetwork = "0.20"
 rate_limit = "0.1"
+anyhow = "1.0"
+
+[dev-dependencies]
+tokio-test = "0.4"
